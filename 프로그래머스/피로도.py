@@ -8,7 +8,6 @@ def dfs(k, cnt, dungeons, visited):
             dfs(k - dungeons[i][1], cnt + 1, dungeons, visited)
             visited[i] = 0
 
-
 def solution(k, dungeons):
     visited = [0] * len(dungeons)
     dfs(k, 0, dungeons, visited)
