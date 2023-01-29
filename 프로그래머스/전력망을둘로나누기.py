@@ -7,7 +7,6 @@ def dfs(v, graph, visited):
     cnt += 1
     for node in graph[v]:
         if visited[node] == 0:
-            visited[node] = 1
             dfs(node, graph, visited)
 
 def solution(n, wires):
