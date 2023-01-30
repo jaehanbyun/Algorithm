@@ -1,7 +1,6 @@
 import collections
 
 def solution(input_string):
-    answer = ''
     sH = collections.defaultdict(int)
     input_string = list(input_string)
     iG = set(input_string)
