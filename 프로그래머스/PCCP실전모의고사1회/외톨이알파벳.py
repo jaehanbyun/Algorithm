@@ -30,3 +30,20 @@ def solution(input_string):
         answerL.sort()
         answer = ''.join(s for s in answerL)
         return answer
+
+# 간결 풀이
+# import collections
+# def solution(input_string):
+#     answer = ''
+#     sH = collections.defaultdict(int)
+#     prev = None
+#     for cur in input_string:
+#         if cur != prev:
+#             sH[cur]+=1
+#         prev = cur
+#     for [key, val] in sH.items():
+#         if val >= 2:
+#             answer+=key
+#     if len(answer) == 0:
+#         return "N"
+#     return "".join(sorted(answer))
