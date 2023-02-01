@@ -24,3 +24,5 @@ def solution(ability):
     dfs(0, 0, ability, visited)
 
     return fScore
+
+
